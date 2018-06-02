@@ -2,7 +2,7 @@
   "name": "vue-plec-editor",
   "main": "./src/index.js",
   "description": "component for plec-editor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Patrick Bellerive <p.bellerive@gmail.com>",
   "license": "MIT",
   "scripts": {
