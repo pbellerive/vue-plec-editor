@@ -1,10 +1,10 @@
 {
   "name": "vue-plec-editor",
+  "main": "./src/index.js",
   "description": "component for plec-editor",
   "version": "1.0.1",
   "author": "Patrick Bellerive <p.bellerive@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

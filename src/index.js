@@ -7,3 +7,4 @@ if (window) {
         window.Vue.use(VuePlecEditor)
     }
 }
+export default VuePlecEditor
