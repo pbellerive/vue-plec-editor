@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-plec-editor</title>
+  </head>
+  <body>
+    <div id="app">
+      Dev for Vue Plec-Editor
+      <vue-plec-editor v-model="test"></vue-plec-editor>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./dist/build.js"></script>
+    <script>
+      new Vue({
+        data: {
+          test: ''
+        },
+        el: '#app',
+        // render: h => h(App),
+        components: {
+          'vue-plec-editor': window.VuePlecEditor
+        }
+      })
+
+      </script>
+  </body>
+</html>
