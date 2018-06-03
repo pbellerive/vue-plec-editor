@@ -12,7 +12,12 @@ export default {
     'value':{
         type: String
     },
-    'options': Object
+    'options': {
+        default: function() {
+            return {};
+        },
+        type: Object
+    }
   },
   data() {
       return {
@@ -29,10 +34,13 @@ export default {
   methods: {
   },
   mounted() {
+      let customOptions= [];
+
+
       this.editor = PlecEditor.init({
           el: 'editor',
-          // buttonFilter: this.options.buttonFilter,
-          // plugins: this.options.plugins,
+          buttonFilter: this.options.buttonFilter,
+          plugins: this.options.plugins,
           afterInit:(event) => {
               event.target.innerHTML = this.value || '';
           },
